@@ -38,7 +38,7 @@ export function Header() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-3">
             <Button className="gradient-primary text-white body-md font-semibold">
-              <appkit-button />
+              Connect Wallet
             </Button>
           </div>
 
@@ -70,7 +70,7 @@ export function Header() {
               </a>
               <div className="flex flex-col gap-2 pt-4 border-t border-border">
                 <Button className="w-full gradient-primary text-white body-md font-semibold">
-                  <appkit-button />
+                  Connect Wallet
                 </Button> 
               </div>
             </div>
