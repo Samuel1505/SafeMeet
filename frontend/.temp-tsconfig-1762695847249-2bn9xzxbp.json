@@ -40,6 +40,7 @@
     "src/components/FAQ.tsx",
     "src/components/Partners.tsx",
     "src/components/FinalCTA.tsx",
+    "src/components/Header.tsx",
     "/home/admin/Desktop/dev/SafeMeet/frontend/**/*.d.ts"
   ]
 }
