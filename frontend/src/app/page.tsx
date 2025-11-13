@@ -5,7 +5,7 @@ import { About } from "@/components/About";
 import { Statistics } from "@/components/Statistics";
 import { UseCases } from "@/components/UseCases";
 import { FAQ } from "@/components/FAQ";
-import { Partners } from "@/components/Partners";
+
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
@@ -19,7 +19,6 @@ export default function Home() {
       <Statistics />
       <UseCases />
       <FAQ />
-      <Partners />
       <FinalCTA />
       <Footer />
     </div>
