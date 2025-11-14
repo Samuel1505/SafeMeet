@@ -9,7 +9,7 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       {/* Animated Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-cyan-50 dark:from-blue-950/20 dark:via-purple-950/20 dark:to-cyan-950/20" />
+        <div className="absolute inset-0 bg-linear-to-br from-blue-50 via-purple-50 to-cyan-50 dark:from-blue-950/20 dark:via-purple-950/20 dark:to-cyan-950/20" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
@@ -41,7 +41,7 @@ export function Hero() {
             {/* Value Props */}
             <div className="grid sm:grid-cols-3 gap-4">
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shrink-0">
                   <Shield size={20} className="text-blue-600 dark:text-blue-400" />
                 </div>
                 <div>
@@ -50,7 +50,7 @@ export function Hero() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center shrink-0">
                   <Users size={20} className="text-purple-600 dark:text-purple-400" />
                 </div>
                 <div>
@@ -59,7 +59,7 @@ export function Hero() {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <div className="w-10 h-10 rounded-lg bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center flex-shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center shrink-0">
                   <TrendingUp size={20} className="text-cyan-600 dark:text-cyan-400" />
                 </div>
                 <div>
