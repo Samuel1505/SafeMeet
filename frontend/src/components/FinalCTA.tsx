@@ -8,7 +8,7 @@ export function FinalCTA() {
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-cyan-50 dark:from-blue-950/20 dark:via-purple-950/20 dark:to-cyan-950/20" />
+        <div className="absolute inset-0 bg-linear-to-br from-blue-50 via-purple-50 to-cyan-50 dark:from-blue-950/20 dark:via-purple-950/20 dark:to-cyan-950/20" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/30 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/30 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
@@ -16,11 +16,11 @@ export function FinalCTA() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative bg-card/50 backdrop-blur-sm border border-border rounded-3xl p-12 md:p-16 overflow-hidden">
           {/* Gradient Accent */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-lineardient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-3xl" />
           
           <div className="relative text-center">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full px-4 py-2 mb-6">
+            <div className="inline-flex items-center gap-2 bg-linear-to-r from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-full px-4 py-2 mb-6">
               <Sparkles size={16} className="text-blue-600 dark:text-blue-400" />
               <span className="text-sm font-semibold">Start Saving Today</span>
             </div>

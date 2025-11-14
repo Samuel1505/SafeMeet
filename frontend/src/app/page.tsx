@@ -14,6 +14,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Features />
+      <About />
       <UseCases />
       <FAQ />
       <FinalCTA />

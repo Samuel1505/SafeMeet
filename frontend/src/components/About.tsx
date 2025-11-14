@@ -32,7 +32,7 @@ interface HowItWorksStepProps {
 function HowItWorksStep({ number, title, description, icon }: HowItWorksStepProps) {
   return (
     <div className="flex gap-6 items-start">
-      <div className="flex-shrink-0">
+      <div className="shrink-0">
         <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center text-white font-bold">
           {number}
         </div>
@@ -50,7 +50,7 @@ function HowItWorksStep({ number, title, description, icon }: HowItWorksStepProp
 
 export function About() {
   return (
-    <section id="about" className="py-24 bg-gradient-to-b from-background to-gray-50 dark:to-gray-900/20">
+    <section id="about" className="py-24 bg-linear-to-b from-background to-gray-50 dark:to-gray-900/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -126,21 +126,21 @@ export function About() {
           <div className="mt-12 pt-8 border-t border-border">
             <div className="grid sm:grid-cols-3 gap-6">
               <div className="flex items-start gap-3">
-                <CheckCircle2 size={24} className="text-green-500 flex-shrink-0 mt-1" />
+                <CheckCircle2 size={24} className="text-green-500 shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-1">Audited Smart Contracts</h4>
                   <p className="text-sm text-muted-foreground">Security-first architecture reviewed by top auditors</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 size={24} className="text-green-500 flex-shrink-0 mt-1" />
+                <CheckCircle2 size={24} className="text-green-500 hrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-1">Non-Custodial</h4>
                   <p className="text-sm text-muted-foreground">You always maintain full control of your funds</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <CheckCircle2 size={24} className="text-green-500 flex-shrink-0 mt-1" />
+                <CheckCircle2 size={24} className="text-green-500 shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold mb-1">Transparent Fees</h4>
                   <p className="text-sm text-muted-foreground">No hidden costs, clear fee structure</p>
@@ -152,7 +152,7 @@ export function About() {
 
         {/* Additional Info Section */}
         <div className="mt-16 grid md:grid-cols-2 gap-8">
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8">
+          <div className="bg-linear-to-br from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8">
             <Shield size={40} className="text-blue-600 dark:text-blue-400 mb-4" />
             <h3 className="heading-sm mb-3">Bank-Grade Security</h3>
             <p className="body-md text-muted-foreground mb-4">
@@ -174,7 +174,7 @@ export function About() {
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-50 to-cyan-50 dark:from-purple-950/20 dark:to-cyan-950/20 rounded-2xl p-8">
+          <div className="bg-linear-to-br from-purple-50 to-cyan-50 dark:from-purple-950/20 dark:to-cyan-950/20 rounded-2xl p-8">
             <TrendingUp size={40} className="text-purple-600 dark:text-purple-400 mb-4" />
             <h3 className="heading-sm mb-3">Optimized Returns</h3>
             <p className="body-md text-muted-foreground mb-4">

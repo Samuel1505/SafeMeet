@@ -21,7 +21,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
         <span className="font-semibold text-foreground pr-4">{question}</span>
         <ChevronDown
           size={20}
-          className={`flex-shrink-0 text-muted-foreground transition-transform duration-300 ${
+          className={`shrink-0 text-muted-foreground transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
         />

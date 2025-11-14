@@ -41,7 +41,7 @@ function FeatureHighlightCard({
         <ul className="space-y-3">
           {benefits.map((benefit, index) => (
             <li key={index} className="flex items-start gap-2">
-              <Sparkles size={16} className={`${accentColor} flex-shrink-0 mt-1`} />
+              <Sparkles size={16} className={`${accentColor} shrink-0 mt-1`} />
               <span className="text-sm text-muted-foreground">{benefit}</span>
             </li>
           ))}
@@ -160,7 +160,7 @@ export function Features() {
 
         {/* Bottom CTA */}
         <div className="mt-16 text-center">
-          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8">
+          <div className="inline-flex flex-col sm:flex-row items-center gap-4 bg-linear-to-r from-blue-50 to-purple-50 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl p-8">
             <div className="text-left">
               <h3 className="heading-sm mb-2">Ready to start saving?</h3>
               <p className="body-md text-muted-foreground">Join thousands of users already growing their wealth together.</p>
