@@ -41,7 +41,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-gradient-to-b from-background to-gray-50 dark:to-gray-900/50 border-t border-border">
+    <footer className="relative bg-linear-to-b from-background to-gray-50 dark:to-gray-900/50 border-t border-border">
       {/* Background Decoration */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl" />
