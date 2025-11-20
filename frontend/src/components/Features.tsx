@@ -2,6 +2,7 @@
 
 import { Users, Zap, Layout, Award, ArrowRight, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 interface FeatureHighlightCardProps {
   icon: React.ReactNode;
