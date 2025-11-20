@@ -16,11 +16,11 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
     <div className="border border-border rounded-xl overflow-hidden bg-card hover:shadow-md transition-all">
       <button
         onClick={onToggle}
-        className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-muted/50 transition-colors"
+        className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-muted/30 transition-colors"
       >
-        <span className="font-semibold text-foreground pr-4">{question}</span>
+        <span className="font-semibold text-lg text-foreground pr-4">{question}</span>
         <ChevronDown
-          size={20}
+          size={24}
           className={`shrink-0 text-muted-foreground transition-transform duration-300 ${
             isOpen ? "rotate-180" : ""
           }`}
@@ -31,7 +31,7 @@ function FAQItem({ question, answer, isOpen, onToggle }: FAQItemProps) {
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
-        <div className="px-6 pb-4 pt-2 text-muted-foreground body-md border-t border-border">
+        <div className="px-6 pb-5 pt-2 text-muted-foreground text-base leading-relaxed border-t border-border">
           {answer}
         </div>
       </div>
@@ -81,21 +81,21 @@ export function FAQ() {
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-400/5 rounded-full blur-3xl" />
+        <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-200/5 dark:bg-emerald-900/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-200/5 dark:bg-purple-900/5 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge className="mb-4 px-4 py-1.5 gradient-primary text-white">
+          <Badge className="mb-4 px-4 py-1.5 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-400 border-0">
             FAQ
           </Badge>
-          <h2 className="heading-lg mb-4">
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             Frequently Asked{" "}
             <span className="text-gradient">Questions</span>
           </h2>
-          <p className="body-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about SafeMeet. Can't find what you're looking for? Contact our support team.
           </p>
         </div>
@@ -115,10 +115,10 @@ export function FAQ() {
 
         {/* Contact CTA */}
         <div className="mt-12 text-center">
-          <p className="body-md text-muted-foreground mb-4">
+          <p className="text-base text-muted-foreground mb-4">
             Still have questions?
           </p>
-          <button className="text-blue-600 dark:text-blue-400 font-semibold hover:underline">
+          <button className="text-emerald-600 dark:text-emerald-400 font-semibold hover:underline text-base">
             Contact Support →
           </button>
         </div>

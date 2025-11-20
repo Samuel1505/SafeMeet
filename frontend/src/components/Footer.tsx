@@ -41,11 +41,11 @@ export function Footer() {
   ];
 
   return (
-    <footer className="relative bg-linear-to-b from-background to-gray-50 dark:to-gray-900/50 border-t border-border">
+    <footer className="relative bg-linear-to-b from-background to-muted/30 border-t border-border">
       {/* Background Decoration */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-blue-400/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 left-1/4 w-96 h-96 bg-emerald-200/5 dark:bg-emerald-900/5 rounded-full blur-3xl" />
+        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-200/5 dark:bg-purple-900/5 rounded-full blur-3xl" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -54,13 +54,13 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-6 gap-8 lg:gap-12">
             {/* Brand Column */}
             <div className="col-span-2">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center">
-                  <PiggyBank size={24} color="white" />
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 rounded-xl gradient-primary flex items-center justify-center shadow-lg">
+                  <PiggyBank size={28} color="white" />
                 </div>
-                <span className="text-xl font-bold text-gradient">SafeMeet</span>
+                <span className="text-2xl font-bold text-gradient">SafeMeet</span>
               </div>
-              <p className="body-md text-muted-foreground mb-6 max-w-xs">
+              <p className="text-base text-muted-foreground mb-6 max-w-xs leading-relaxed">
                 Your group piggy bank for the Web3 era. Save together, grow together.
               </p>
               
@@ -71,7 +71,7 @@ export function Footer() {
                     key={index}
                     href={social.href}
                     aria-label={social.label}
-                    className="w-10 h-10 rounded-lg bg-muted hover:bg-accent flex items-center justify-center text-muted-foreground hover:text-foreground transition-all hover:scale-110"
+                    className="w-11 h-11 rounded-xl bg-muted hover:bg-accent flex items-center justify-center text-muted-foreground hover:text-foreground transition-all hover:scale-110 border border-border"
                   >
                     {social.icon}
                   </a>
@@ -81,7 +81,7 @@ export function Footer() {
 
             {/* Product Links */}
             <div>
-              <h3 className="font-semibold text-foreground mb-4">Product</h3>
+              <h3 className="font-bold text-foreground mb-4">Product</h3>
               <ul className="space-y-3">
                 {footerLinks.product.map((link, index) => (
                   <li key={index}>
@@ -98,7 +98,7 @@ export function Footer() {
 
             {/* Company Links */}
             <div>
-              <h3 className="font-semibold text-foreground mb-4">Company</h3>
+              <h3 className="font-bold text-foreground mb-4">Company</h3>
               <ul className="space-y-3">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
@@ -115,7 +115,7 @@ export function Footer() {
 
             {/* Resources Links */}
             <div>
-              <h3 className="font-semibold text-foreground mb-4">Resources</h3>
+              <h3 className="font-bold text-foreground mb-4">Resources</h3>
               <ul className="space-y-3">
                 {footerLinks.resources.map((link, index) => (
                   <li key={index}>
@@ -132,7 +132,7 @@ export function Footer() {
 
             {/* Legal Links */}
             <div>
-              <h3 className="font-semibold text-foreground mb-4">Legal</h3>
+              <h3 className="font-bold text-foreground mb-4">Legal</h3>
               <ul className="space-y-3">
                 {footerLinks.legal.map((link, index) => (
                   <li key={index}>
@@ -153,7 +153,7 @@ export function Footer() {
         <div className="py-8 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div className="text-center md:text-left">
-              <h3 className="font-semibold text-foreground mb-2">Stay Updated</h3>
+              <h3 className="font-bold text-foreground mb-2">Stay Updated</h3>
               <p className="text-sm text-muted-foreground">
                 Get the latest updates on features and DeFi opportunities.
               </p>
@@ -162,9 +162,9 @@ export function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 md:w-64 px-4 py-2 rounded-lg border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
+                className="flex-1 md:w-64 px-4 py-3 rounded-xl border border-input bg-background text-sm focus:outline-none focus:ring-2 focus:ring-ring"
               />
-              <Button className="gradient-primary text-white font-semibold whitespace-nowrap">
+              <Button className="gradient-primary text-white font-semibold whitespace-nowrap px-6">
                 Subscribe
               </Button>
             </div>
