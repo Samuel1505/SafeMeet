@@ -8,7 +8,7 @@ export function FinalCTA() {
     <section className="py-24 bg-background relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-50/50 via-white to-teal-50/30 dark:from-emerald-950/10 dark:via-background dark:to-teal-950/10" />
+        <div className="absolute inset-0 bg-linear-to-br from-emerald-50/50 via-white to-teal-50/30 dark:from-emerald-950/10 dark:via-background dark:to-teal-950/10" />
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-emerald-200/20 dark:bg-emerald-900/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-200/20 dark:bg-purple-900/10 rounded-full blur-3xl" />
       </div>
@@ -16,7 +16,7 @@ export function FinalCTA() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative bg-card/80 backdrop-blur-sm border border-border rounded-3xl p-12 md:p-16 overflow-hidden shadow-xl">
           {/* Gradient Accent */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-emerald-500/10 to-teal-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-0 right-0 w-64 h-64 bg-linear-to-br from-emerald-500/10 to-teal-500/10 rounded-full blur-3xl" />
           
           <div className="relative text-center">
             {/* Badge */}

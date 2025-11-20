@@ -81,7 +81,7 @@ export function UseCases() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/30 relative overflow-hidden">
+    <section className="py-24 bg-linear-to-b from-background to-muted/30 relative overflow-hidden">
       {/* Background Decoration */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-1/4 right-0 w-96 h-96 bg-teal-200/10 dark:bg-teal-900/5 rounded-full blur-3xl" />
